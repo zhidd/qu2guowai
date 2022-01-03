@@ -11,12 +11,13 @@
             "description": "AlterID",
             "value": "0"
         },
+        
         "WSPATH": {
             "description": "WebSocket Path",
             "value": "/"
         }
     },
     "website": "https://dfgfdgdfg.com",
-    "repository": "https://github.com/zhidd/guowai",
+    "repository": "https://github.com/zhidd/quguowai",
     "stack": "container"
 }
