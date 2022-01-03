@@ -8,25 +8,52 @@ DIR_TMP="$(mktemp -d)"
 # Write V2Ray configuration
 cat << EOF > ${DIR_TMP}/heroku.json
 {
-    "inbounds": [{
-        "port": ${PORT},
-        "protocol": "vless",
-        "settings": {
-            "clients": [{
-                "id": "${ID}",
-                "alterId": ${AID}
-            }]
-        },
-        "streamSettings": {
-            "network": "ws",
-            "wsSettings": {
-                "path": "${WSPATH}"
+   {
+    "log": {
+        "loglevel": "info"
+    },
+    "inbounds": [
+        {
+            "port": 443, 
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "1a5a6810-a3a9-4f0a-b1d7-1ca800c8491f", 
+                        "flow": "xtls-rprx-origin",
+                        "level": 0
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "dest": 80 
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "alpn": [
+                        "http/1.1"
+                    ],
+                    "certificates": [
+                        {
+                            "certificateFile": "/path/to/fullchain.crt",
+                            "keyFile": "/path/to/private.key"
+                        }
+                    ]
+                }
             }
         }
-    }],
-    "outbounds": [{
-        "protocol": "freedom"
-    }]
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
+}
 }
 EOF
 
