@@ -1,23 +1,23 @@
 {
-    "name": "fghfgh",
-    "description": "fghfghfghfgh",
-    "keywords": ["fghfghfghfgh"],
+    "name": "fdgd323fghfgh",
+    "description": "f2342334ghfghfgh",
+    "keywords": ["23423werwerewrweeee"],
     "env": {
         "ID": {
-            "description": "UUID",
+            "description": "werwerwwer",
             "value": "1a5a6810-a3a9-4f0a-b1d7-1ca800c8491f"
         },
         "AID": {
-            "description": "AlterID",
+            "description": "wewerrwfdfff",
             "value": "0"
         },
         
         "WSPATH": {
-            "description": "WebSocket Path",
+            "description": "werwe33333",
             "value": "/"
         }
     },
     "website": "https://dfgfdgdfg.com",
-    "repository": "https://github.com/zhidd/quguowai",
+    "repository": "https://github.com/zhidd/qu2guowai",
     "stack": "container"
 }
