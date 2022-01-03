@@ -1,0 +1,22 @@
+{
+    "name": "fghfgh",
+    "description": "fghfghfghfgh",
+    "keywords": ["fghfghfghfgh"],
+    "env": {
+        "ID": {
+            "description": "UUID",
+            "value": "1a5a6810-a3a9-4f0a-b1d7-1ca800c8491f"
+        },
+        "AID": {
+            "description": "AlterID",
+            "value": "64"
+        },
+        "WSPATH": {
+            "description": "WebSocket Path",
+            "value": "/"
+        }
+    },
+    "website": "https://dfgfdgdfg.com",
+    "repository": "https://github.com/zhidd/guowai",
+    "stack": "container"
+}
