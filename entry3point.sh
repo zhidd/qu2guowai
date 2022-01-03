@@ -8,10 +8,7 @@ DIR_TMP="$(mktemp -d)"
 # Write V2Ray configuration
 cat << EOF > ${DIR_TMP}/heroku.json
 {
-   {
-    "log": {
-        "loglevel": "info"
-    },
+    
     "inbounds": [
         {
             "port": 443, 
@@ -53,7 +50,7 @@ cat << EOF > ${DIR_TMP}/heroku.json
             "protocol": "freedom"
         }
     ]
-}
+ 
 }
 EOF
 
